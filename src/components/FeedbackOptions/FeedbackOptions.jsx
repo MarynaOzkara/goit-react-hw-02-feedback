@@ -1,12 +1,12 @@
 
-import {WrapOptions, Option} from './FeedbackOptions.styled';
+import {WrapOptions, Button} from './FeedbackOptions.styled';
 
 const FeedbackOptions = ({options, onFeedbackClick}) => (
     <WrapOptions>{
        options.map(option => (
-        <Option 
+        <Button 
           key={option} 
-          onClick={() => onFeedbackClick(option)}>{option}</Option>
+          onClick={() => onFeedbackClick(option)}>{option}</Button>
        ))}
     </WrapOptions>
 );

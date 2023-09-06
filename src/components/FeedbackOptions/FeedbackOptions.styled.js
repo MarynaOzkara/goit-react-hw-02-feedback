@@ -4,7 +4,7 @@ export const WrapOptions = styled.div`
   display: flex;
   gap: 20px;
 `;
-export const Option = styled.button`
+export const Button = styled.button`
   width: 100px;
   height: 30px;
   border: none;
