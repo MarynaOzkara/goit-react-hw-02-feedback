@@ -12,7 +12,7 @@ export class App extends Component {
     bad: 0,
   }
   handleFeedback = state => {
-    console.log(state);
+    // console.log(state);
       this.setState(prevState => ({
          [state]: prevState[state] +1,
       }))
@@ -32,7 +32,7 @@ export class App extends Component {
     const totalFeedback = this.handleTotal();
     const percentage = this.countPercentage();
     return (
-       <Container>
+    <Container>
       <Section title="Please leave feedback">
         <FeedbackOptions 
           options={options} 
